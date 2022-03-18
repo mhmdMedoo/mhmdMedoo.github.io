@@ -1,0 +1,212 @@
+@media(max-width:1200px){
+    .contaner{
+        width: auto !important;
+        padding: 0px 25px;
+    }
+    header{
+        width: auto;
+    }
+    .UltimateFeatures{
+        display: block;
+        text-align: center;
+    }
+    .UltimateFeatures .text h3, .UltimateFeatures .text p{
+        padding-right: 0px;
+    }
+    .UltimateFeatures .image img{
+        width: 0%;
+    }
+    .download .photo img{
+        width: 40vw;
+    }
+}
+@media(max-width:950px){
+    .contaner .content .mainText h1{
+        font-size: 40px;
+    }
+    .contaner .content .mainText h2,.contaner .content .mainText p{
+        font-size: 15px;
+    }
+    .contaner .content .image{
+        width: 45vw;
+    }
+    .contaner .content .image img{
+        width: 100%;
+    }
+    header .contaner{
+        height: 100%;
+    }
+    .contaner .content{
+        height: 80vh;
+    }
+    .companies .logos {
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .companies .logos img{
+        width: 150px;
+        padding: 50px 20px;
+    }
+    .Features{
+        display: block;
+    }
+    h2{
+        font-size: 26px;
+    }
+    .Smart .jackpots > div{
+        padding: 20px 0px;
+    }
+    .Smart .jackpots i{
+        font-size: 25px;
+    }
+    .Smart .jackpots h4{
+        font-size: 16px;
+    }
+    b,p{
+        font-size: 13px !important;;
+    }
+    .desgined img{
+        width: 70vw;
+    }
+    .desgined .text h3{
+        font-size: 25px;
+    }
+    .chooseOurApp .ourFeaturs > div i, .UltimateFeatures .text .IconsFeatures > div i {
+      font-size: 40px;
+    }
+    .chooseOurApp .ourFeaturs > div h4, .UltimateFeatures .text .IconsFeatures > div h4{
+        font-size: 17px;
+    }
+    .Testimonials{
+        display: block;
+    }
+    .Testimonials .mapAndPeopleImages img{
+        width: 90vw;
+        padding-bottom: 100px;
+    }
+    .FAQ .FAQqustions h3{
+        font-size: 15px;
+    }
+    .FAQ{
+        width: auto;
+    }
+}
+
+@media(max-width:750px){
+    header nav #mune{
+        display: none;
+        position: absolute;
+        right: 20px;
+        width: 250px;
+        background-color: var(--blue-color);
+        color: white !important;;
+        border-radius: 20px;
+    }
+    header nav #mune ul{
+        color: white;
+        padding: 25px;
+        display: block;
+    }
+    header nav #openMenu,header nav #closeMenu{
+        display: block;
+    }
+    .chooseOurApp .ourFeaturs, .UltimateFeatures .text .IconsFeatures{
+        justify-content: center;
+    }
+    .UltimateFeatures .text .IconsFeatures > div{
+        /*! padding: 20px; */
+        text-align: center;
+    }
+    .Subscribe h2,.Subscribe p{
+        width: auto;
+    }
+    .active{
+        display: block !important;
+    }
+    .Boxes{
+        width: 80vw;
+    }
+    .box{
+        padding-bottom: 80px;
+        margin-bottom: 50px;
+    }
+    .download .photo{
+        display: none;
+    }
+}
+@media(max-width:450px){
+    b, p{
+        font-size: 11px !important;;
+    }
+    .tryBtn{
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+    header nav #openMenu, header nav #closeMenu{
+        font-size: 25px;
+    }
+    .contaner .content .mainText h2 span{
+        font-size: 10px;
+    }
+    h1{
+        font-size: 30px !important;
+    }
+    h2,h3{
+        font-size: 15px !important;
+    }
+    h5{
+        font-size: 15px !important;
+    }
+    .contaner .content .mainText #demo{
+        font-size: 10px;
+    }
+    .Features .txt div i {
+        padding: 15px;
+        font-size: 30px;
+    }
+    .Smart .txt{
+        display: block;
+    }
+    .Smart .txt h2{
+        padding-bottom:  35px;
+    }
+    .Smart .txt p{
+        border: none;
+        border-top: 2px solid #616368;
+    }
+    .Smart .jackpots{
+        display: block;
+        text-align: center;
+    }
+    .Smart .jackpots > div{
+        padding: 20px 0px;
+        margin: 0 auto;
+    }
+    .desgined{
+        display: block;
+        text-align: center;
+    }
+    .desgined img{
+        width: 70vw;
+        padding-bottom: 50px;
+    }
+    .UltimateFeatures .text .IconsFeatures > div{
+        padding: auto;
+        text-align: center;
+    }
+    .UltimateFeatures .text .IconsFeatures > div h4{
+        padding: 20px 0px;
+    }
+    .Testimonials .text h2,.download .text h2{
+        font-size: 25px !important;;
+    }
+    .download .text .DownloadBtns > img{
+        width: 40vw;
+    }
+    footer ul{
+        display: block;
+    }
+    #scrollTop{
+        padding: 10px 12px;
+    }
+}

@@ -1,0 +1,711 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+    src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+:root{
+    --main-font: Poppins;
+    --yellow-color: #fcae61;
+    --blue-color: #242f51;
+    --hard-blue-color : #2500f9;
+}
+
+html,body,*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #ffffff;
+    font-family:var(--main-font);
+    overflow-x: hidden;
+}
+a,a:focus,a:active,a:visited{
+    color: inherit;
+    text-decoration: none;
+}
+.tryBtn{
+    background-color: var(--hard-blue-color);
+    color: #ffffff !important;
+    padding: 14px 25px;
+    border-radius: 40px;
+    transition: color,background,filter , 0.5s;
+}
+.tryBtn:hover{
+    background-color: var(--blue-color);
+    color: var(--yellow-color);
+     filter: drop-shadow(1px 1px 5px var(--blue-color))
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/headerbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+}
+.contaner{
+    width: 1200px;
+    margin: auto;
+}
+header nav{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+header nav #openMenu,header nav #closeMenu{
+      font-size: 30px;
+      color: var(--blue-color);
+      cursor: pointer;
+      display: none;
+}
+
+header nav #closeMenu{
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+header nav #logo{
+font-weight: 600;
+    font-size: 30px;
+    color: var(--yellow-color);
+}
+header nav #logo span{
+    color: var(--blue-color);
+}
+
+header nav #mune,header nav #mune ul{
+    display: flex;
+}
+header nav #mune ul{
+    color: var(--blue-color);
+    list-style: none;
+    padding: 0px 30px;
+}
+header nav #mune ul li{
+    padding: 15px;
+    transition: color 0.3s;
+    font-size:16px;
+}
+header nav #mune ul li:hover{
+    color: var(--yellow-color);
+}
+/*the end of navbar style*/
+
+/*content style */
+
+.contaner .content{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+.contaner .content .mainText{
+    margin: auto;
+}
+.contaner .content .mainText h2{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--blue-color);
+}
+.contaner .content .mainText h2 i{
+    color: white;
+    background-color: #feaa25;
+    padding: 12px;
+    border-radius: 50%;
+    margin-right: 10px
+}
+.contaner .content .mainText h2 span{
+    padding: 10px 20px 10px 0px;
+    background: #e2eaed;
+    border-radius: 35px;
+}
+.contaner .content .mainText h1{
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--blue-color);
+    padding: 30px 0px;
+}
+.contaner .content .mainText p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #616368;
+    padding-bottom: 55px;
+}
+.contaner .content .mainText #demo{
+    padding-left: 20px;
+    color: var(--hard-blue-color);
+}
+.contaner .content .image{
+    margin: auto;
+}
+.contaner .content .image img{
+    transition: transform 0.2s;
+}
+.contaner .content .image img:hover{
+    transform: rotate(1deg);
+}
+
+
+/*End header styleing*/
+
+.companies{
+    padding: 100px 0px;
+    overflow: hidden;
+}
+.companies h4{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.companies .logos{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px;
+}
+
+/*End copanies style*/
+.Features{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 150px ;
+}
+.Features .img{
+    background-image: url(../images/bgForFeatures.png);
+    background-size:contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.Features .txt h2{
+    font-size: 36px;
+    color: var(--blue-color);
+    font-weight: 600;
+}
+.Features .txt p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #616368;
+}
+.Features .txt > div{
+    display: flex;
+    padding: 50px 0px;
+}
+.Features .txt div i{
+    padding: 20px;
+    font-size: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.Features .txt div .fa-gauge{
+    background: #ffecef;
+    color: #f55767;
+}
+.Features .txt div .fa-file-contract{
+    background: #f4f4ff;
+    padding: 20px 29px;
+    color: #2563ff;
+}
+.Features .txt div .fa-bezier-curve{
+    color: #40975f;
+    background: #e4ffee;
+    padding: 20px 17px;
+}
+.Features .txt div h5{
+    font-size: 20px
+}
+.Features .txt .one h5,.Smart .jackpots .jackpotOne h4{
+    color: #f55767;
+}
+.Features .txt .two h5,.Smart .jackpots .jackpotTwo h4{
+    color: #2563ff;
+}
+.Features .txt .three h5, .Smart .jackpots .jackpotThree h4{
+    color: #40975f;
+}
+
+/*End Features section*/
+
+.Smart{
+    padding: 100px 0px;
+}
+
+.Smart .txt{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Smart .txt h2{
+    font-size: 40px;
+    color: var(--blue-color);
+    padding-right: 70px;
+    font-weight: 600;
+}
+.Smart .txt p{
+    font-size: 16px;
+    color: #616368;
+    border-left: 2px solid #616368;
+    font-weight: 400;
+    padding: 50px 0px;
+    padding-left: 70px;
+    margin: auto 0px;
+}
+.Smart .jackpots{
+    padding: 100px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.Smart .jackpots > div{
+    width: 310px;
+}
+.Smart .jackpots i{
+    font-size: 50px;
+    margin: 0px 0px 30px 0px;
+    border-radius: 50%;
+}
+.Smart .jackpots .jackpotOne i{
+    padding: 20px 27px;
+    background: #ffecef;
+    color: #f55767;
+}
+.Smart .jackpots .jackpotTwo i{
+background: #f4f4ff;
+    padding: 22px 20px;
+    color: #2563ff;
+}
+.Smart .jackpots .jackpotThree i{
+    padding: 20px 24px;
+    color: #40975f;
+    background: #e4ffee;
+}
+.Smart .jackpots h4{
+    /*i give the color style for h4 from the Features section*/
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0px 0px 20px 0px;
+}
+.Smart .jackpots p,.desgined .text p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #616368;
+}
+.desgined{
+    display: flex;
+    padding:100px 0px;
+}
+.desgined .text{
+    width: 400px;
+    margin: auto;
+}
+.desgined .text h3{
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--blue-color);
+    padding-bottom: 25px;
+}
+.desgined .text p{
+    padding-bottom: 50px;
+}
+
+/*desgin styleing is ended here*/
+
+.chooseOurApp{
+    padding: 100px 0px;
+}
+.chooseOurApp h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--blue-color);
+}
+.chooseOurApp > p{
+    text-align: center;
+    font-size: 16px;
+    color: #616368;
+    padding: 30px 0px 70px 0px ;
+}
+.chooseOurApp .ourFeaturs,.UltimateFeatures .text .IconsFeatures{
+    display: flex !important;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.chooseOurApp .ourFeaturs >div{
+    flex-basis: 400px;
+    text-align: center;
+    padding: 40px;
+}
+
+.chooseOurApp .ourFeaturs > div h4 ,.UltimateFeatures .text .IconsFeatures >div h4{
+    color: var(--blue-color);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+}
+.chooseOurApp .ourFeaturs >div p,.UltimateFeatures .text .IconsFeatures >div p{
+    font-size: 16px;
+    color: #616368;
+    font-weight: 400;
+}
+.chooseOurApp .ourFeaturs >div i,.UltimateFeatures .text .IconsFeatures >div i{
+    font-size: 50px;
+    color: var(--blue-color);
+}
+
+/*the choose our app section is ended here*/
+
+.UltimateFeatures{
+    display: flex;
+    padding: 150px 0px;
+}
+.UltimateFeatures .text h3{
+    color: var(--blue-color);
+    font-size: 36px;
+    padding-right: 150px;
+}
+.UltimateFeatures .text>p{
+    font-size: 16px;
+    color: #616368;
+    padding: 20px 150px 50px 0px;
+}
+
+.UltimateFeatures .text .IconsFeatures{
+    padding-bottom: 40px;
+}
+.UltimateFeatures .text .IconsFeatures > div{
+    flex-basis: 250px;
+    text-align: left;
+    padding: 20px 0px;
+}
+.UltimateFeatures .text .IconsFeatures > div h4{
+    padding-left: 0px;
+}
+.UltimateFeatures .image img{
+    margin: auto;
+}
+
+/*Ended the ultimate features section*/
+
+.Subscribe{
+    text-align: center;
+}
+
+.Subscribe h2{
+    color: var(--blue-color);
+    font-size: 36px;
+    width: 650px;
+    padding: 30px 0px;
+    margin: 0px auto;
+}
+.Subscribe p{
+    font-size: 16px;
+    color: #616368;
+    width: 650px;
+    margin: 0px auto;
+    padding-bottom: 70px;
+}
+.Subscribe #subBoxes .btns{
+    border: 1px solid gray;
+    display: inline;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 17px 3px;
+}
+
+.Subscribe #subBoxes .btns > span{
+    padding: 15px 25px;
+    border-radius: 50px;
+}
+
+.Subscribe #subBoxes .btns > span.fucas{
+    background-color: var(--hard-blue-color);
+    color: #ffffff !important;
+}
+
+.Boxes{
+    display: none;
+    width: 800px;
+    margin: 0px auto;
+    padding: 100px 0px;
+    justify-content: space-around;
+
+}
+.box{
+    margin: 0px 15px;
+    box-shadow: 3.837px 54.866px 62px 0px rgba(144, 163, 177, 0.18);
+    background-color: white;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    flex-basis: 400px;
+    transition: box-shadow ,0.2s;
+}
+.Annually{
+    padding-bottom: 60px;
+}
+.box:hover{
+    box-shadow: 0px 0px 0px 4px rgba(144, 163, 177, 0.18)
+}
+.active{
+    display: flex !important;
+}
+
+.class{
+    background-color: rgb(244, 247, 249);
+    padding: 50px;
+    margin-bottom: 20px;
+}
+.class .price{
+    font-size: 60px;
+    color: var(--blue-color);
+}
+.class .price sub{
+    font-size: 18px;
+    color: #999ca5;
+}
+.class h4{
+    font-size: 20px;
+    color: var(--blue-color);
+    padding: 10px 0px;
+}
+.class h5 {
+    font-size: 16px;
+    color: #999ca5;
+    font-weight: 400;
+}
+.box>b{
+    display: block;
+    padding: 20px 0px;
+    font-size: 16px;
+    color: #999ca5;
+}
+.box a{
+    position: relative;
+    top: 20px;
+    padding: 19px 30px;
+}
+.box .trail{
+    display: block;
+    padding: 30px 0px;
+    top: 25px;
+    color: var(--hard-blue-color);
+}
+
+/* End Subscribe style */
+
+.Testimonials{
+    display: flex;
+    padding: 100px 0px;
+    justify-content: space-between;
+}
+
+.Testimonials .mapAndPeopleImages{
+    margin: auto;
+}
+
+.Testimonials .mapAndPeopleImages img{
+    width: 40vw;
+    margin: auto;
+}
+.Testimonials .text h2{
+    font-size: 40px;
+    color: var(--blue-color);
+}
+.Testimonials .text b{
+    color: #616368;
+    font-size: 16px;
+    padding: 20px 0px;
+    display: block;
+    font-weight: 400;
+}
+.Testimonials .text .stars i{
+    color: var(--yellow-color);
+}
+.Testimonials .title {
+    font-size: 20px;
+    color: var(--blue-color);
+    padding: 20px 0px;
+}
+.Testimonials .comment{
+    color: #616368;
+    font-size: 16px;
+    font-weight: 400;
+}
+.Testimonials .pirson{
+    display: flex;
+    padding: 50px 0px;
+}
+.Testimonials .pirson img{
+    width: 90px;
+    height: 90px;
+}
+.Testimonials .pirson h5,.Testimonials .pirson b{
+    font-size: 18px;
+    color: var(--blue-color);
+    padding: 10px 0px 0px 20px;
+}
+.Testimonials .pirson b{
+    color: #616368;
+}
+
+/* End Testimonials style */
+
+.FAQ{
+    padding: 100px 0px;
+    width: 900px;
+    margin: 0px auto;
+}
+.FAQ h2{
+    font-size: 40px;
+    color: var(--blue-color);
+    font-weight: 400;
+    text-align: center;
+    padding: 30px 0px;
+}
+.FAQ b{
+    color: #616368;
+    font-size: 16px;
+    font-weight: 400;
+    transition: display 1s;
+}
+.FAQ > b{
+    display: block;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.FAQ .FAQqustions{
+    background-color: #f5f7fa;
+    border-radius: 10px;
+}
+.FAQ .FAQqustions h3{
+    font-size: 20px;
+    padding: 30px 0px;
+    color: var(--blue-color);
+}
+.FAQ .FAQqustions h3 i{
+    font-size: 20px;
+    color: var(--blue-color);
+    float: right;
+    cursor: pointer;
+}
+.FAQ .FAQqustions b{
+    display: none ;
+    padding-bottom: 30px;
+}
+.open b{
+    display: block !important;
+}
+.FAQqustions .Q{
+    padding: 0px 40px 0px 40px;
+    border: 10px solid white;
+    border-radius: 10px;
+}
+
+/*End FAQ style */
+
+.download{
+    padding: 100px 0px;
+    display: flex;
+}
+.download .text{
+    margin: auto;
+}
+.download .text h2{
+    font-size: 48px;
+    color: var(--blue-color);
+}
+.download .text b{
+    color: #616368;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 30px 0px 0px 0px;
+    display: block;
+}
+.download .text .DownloadBtns{
+    display: flex;
+    padding: 30px 0px;
+}
+.download .text .DownloadBtns > img{
+    cursor: pointer;
+    padding: 0px 10px;
+    transition: transform 0.2s;
+}
+.download .text .DownloadBtns > img:hover{
+    transform: translate(0px , -5px);
+}
+.download .photo {
+    width: 45vw;
+}
+
+/*End Download section style*/
+
+footer{
+    padding: 150px 0px;
+    background-color: #09142e;
+    text-align: center;
+}
+footer h2{
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--yellow-color);
+}
+footer h2 span{
+    color: white;
+}
+footer ul{
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding: 50px 0px;
+}
+footer ul li{
+    list-style: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+footer ul li a{
+    transition: color 0.2s;
+}
+footer ul li a:hover{
+    color: var(--yellow-color);
+}
+footer .media{
+    color: #273043;
+}
+footer .media a{
+    padding: 10px 20px;
+    font-size: 30px;
+    transition: color 0.2s;
+}
+footer .media a:hover{
+    color: white;
+}
+footer h5{
+    color: #5f636e;
+    padding: 50px 0px;
+    font-size: 14px;
+}
+footer p{
+    color: navajowhite;
+    font-size: 15px;
+}
+footer p i{
+    padding: 0px 20px;
+    color: red;
+}
+
+#scrollTop{
+    position: fixed;
+    bottom: 70px;
+    right: 70px;
+    padding: 20px;
+    color: white;
+    background: var(--yellow-color);
+    cursor: pointer;
+    border-radius: 50%;
+}
